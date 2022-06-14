@@ -1,0 +1,5 @@
+1. Install Slim - PHP 
+2. Configure Slim
+3. Add controllers
+4. Add Doctrine ORM
+5. Add Templates - Twig

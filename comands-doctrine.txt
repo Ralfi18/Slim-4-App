@@ -1,0 +1,14 @@
+**************************************
+!!! IMPORTANT !!!
+change path (in this doc. is Entity) 
+**************************************
+
+1. Create entities from existing database:
+php vendor/bin/doctrine orm:convert-mapping --from-database annotation Entity
+
+2. CREATE GETTERS AND SETTERS:
+php vendor/bin/doctrine orm:generate-entities --generate-annotations=true --update-entities=true --generate-methods=true  Entity --no-backup
+
+
+3. Create tables based on existing Entities
+php vendor/bin/doctrine  orm:schema-tool:create
